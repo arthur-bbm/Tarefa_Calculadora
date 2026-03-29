@@ -11,22 +11,25 @@ export default function App() {
         <View style={styles.div_input}>
           <TextInput 
             placeholder='Valor 01 [placeholder]'
-            placeholderTextColor='red'
+            placeholderTextColor='#f2aba9'
             style={styles.input}
           />
         </View>
         <View style={styles.div_input}>
           <TextInput 
             placeholder='Valor 02 [placeholder]'
-            placeholderTextColor='red'
+            placeholderTextColor='#f2aba9'
             style={styles.input}
           />
         </View>
         <View style={styles.div_buttons}>
-          <Button color='#4d9d37' title='SOMAR'/>
-          <Button color='#ca1bc1' title='SUBTRAIR'/>
-          <Button color='#830034' title='MULTIPLICAR'/>
-          <Button color='#0053d7' title='DIVIDIR'/>
+          <Button color='#60a917' title='SOMAR'/>
+          <Button color='#d70071' title='SUBTRAIR'/>
+          <Button color='#a20025' title='MULTIPLICAR'/>
+          <Button color='#004fee' title='DIVIDIR'/>
+        </View>
+        <View style={styles.div_texto}>
+          <Text style={styles.texto}>0</Text>
         </View>
       </View>
     </View>
@@ -44,15 +47,14 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: 'black',
     paddingVertical: 70,
-    paddingHorizontal: 10
   },
   div_titulo: {
-    backgroundColor: '#3aaaff80',
+    backgroundColor: '#dae8fc',
     paddingVertical: 15,
+    marginHorizontal: 20,
     borderRadius: 10,
     borderWidth: 1,
-    borderColor: '#4262ff'
-    
+    borderColor: '#a6bee0'
   },
   titulo: {
     fontSize: 30,
@@ -66,13 +68,28 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: 'black',
     borderRadius: 5,
-    width: 345,
+    width: '90%',
     padding: 10,
     fontStyle: 'italic'
   },
   div_buttons: {
     paddingTop: 20,
+    paddingBottom: 40,
+    paddingHorizontal: 5,
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
+  div_texto: {
+    backgroundColor: '#050505',
+    paddingVertical: 5,
+    marginHorizontal: 20,
+    borderRadius: 10,
+    alignItems: 'center',
+  },
+  texto: {
+    fontSize: 30,
+    marginHorizontal: 70,
+    fontWeight: 'bold',
+    color: 'white'
+  }
 });
